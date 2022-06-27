@@ -1,0 +1,64 @@
+{
+  "version": "0.0.1",
+  "name": "solid-gesture",
+  "description": "👇 Bread n butter utility for component-tied mouse/touch gestures in Solid.",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/esm/solid-gesture.js",
+  "module": "dist/esm/solid-gesture.js",
+  "types": "dist/types/solid-gesture.d.ts",
+  "exports": {
+    ".": {
+      "solid": "./dist/source/solid-gesture.jsx",
+      "default": "./dist/esm/solid-gesture.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "pnpm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wobsoriano/solid-gesture.git"
+  },
+  "keywords": [
+    "solid",
+    "primitives",
+    "hooks",
+    "wheel",
+    "drag",
+    "scroll",
+    "zoom",
+    "gestures",
+    "pinch"
+  ],
+  "sideEffects": false,
+  "author": "Robert Soriano <sorianorobertc@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/wobsoriano/solid-gesture#readme",
+  "peerDependencies": {
+    "solid-js": ">=1.4.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.30.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.18.0",
+    "eslint-plugin-solid": "^0.7.0",
+    "rollup": "^2.58.0",
+    "rollup-preset-solid": "^1.0.1",
+    "solid-js": "^1.4.4",
+    "typescript": "^4.4.4"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "solid"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:solid/typescript"
+    ]
+  }
+}
