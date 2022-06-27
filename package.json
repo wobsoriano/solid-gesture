@@ -1,6 +1,7 @@
 {
   "version": "0.0.1",
   "name": "solid-gesture",
+  "packageManager": "pnpm@7.3.0",
   "description": "👇 Bread n butter utility for component-tied mouse/touch gestures in Solid.",
   "type": "module",
   "files": [
@@ -17,7 +18,9 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "pnpm build"
+    "prepublishOnly": "nr build",
+    "lint": "eslint .",
+    "release": "bumpp && npm publish"
   },
   "repository": {
     "type": "git",
@@ -42,10 +45,12 @@
     "solid-js": ">=1.4.0"
   },
   "devDependencies": {
+    "@antfu/ni": "^0.16.3",
     "@typescript-eslint/parser": "^5.30.0",
     "bumpp": "^8.2.1",
     "eslint": "^8.18.0",
     "eslint-plugin-solid": "^0.7.0",
+    "pnpm": "^7.3.0",
     "rollup": "^2.58.0",
     "rollup-preset-solid": "^1.0.1",
     "solid-js": "^1.4.4",
