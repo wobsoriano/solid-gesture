@@ -65,5 +65,8 @@
       "eslint:recommended",
       "plugin:solid/typescript"
     ]
+  },
+  "dependencies": {
+    "@use-gesture/core": "^10.2.16"
   }
 }
