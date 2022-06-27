@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2",
   "name": "solid-gesture",
   "packageManager": "pnpm@7.3.0",
   "description": "👇 Bread n butter utility for component-tied mouse/touch gestures in Solid.",
