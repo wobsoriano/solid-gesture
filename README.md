@@ -38,14 +38,14 @@ function PullRelease() {
 
 solid-gesture exports several primitives that can handle different gestures.
 
-| Primitive  | Description                                |
-|------------|--------------------------------------------|
-| useMove    | Handles mouse move events                  |
-| useHover   | Handles mouse enter and mouse leave events |
-| useScroll  | Handles scroll events                      |
-| useWheel   | Handles wheel events                       |
-| usePinch   | Handles the pinch gesture                  |
-| useGesture | Handles multiple gestures in one hook      |
+| Primitive    | Description                                |
+|--------------|--------------------------------------------|
+| `useMove`    | Handles mouse move events                  |
+| `useHover`   | Handles mouse enter and mouse leave events |
+| `useScroll`  | Handles scroll events                      |
+| `useWheel`   | Handles wheel events                       |
+| `usePinch`   | Handles the pinch gesture                  |
+| `useGesture` | Handles multiple gestures in one hook      |
 
 ## License
 
