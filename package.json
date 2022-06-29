@@ -7,13 +7,13 @@
   "files": [
     "dist"
   ],
-  "main": "dist/esm/solid-gesture.js",
-  "module": "dist/esm/solid-gesture.js",
-  "types": "dist/types/solid-gesture.d.ts",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
-      "solid": "./dist/source/solid-gesture.jsx",
-      "default": "./dist/esm/solid-gesture.js"
+      "solid": "./dist/source/index.jsx",
+      "default": "./dist/esm/index.js"
     }
   },
   "scripts": {

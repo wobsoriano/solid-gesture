@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "playground",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -15,6 +15,8 @@
     "vite-plugin-solid": "^2.2.6"
   },
   "dependencies": {
-    "solid-js": "^1.4.2"
+    "solid-js": "^1.4.2",
+    "solid-spring": "^0.0.7",
+    "solid-gesture": "workspace:*"
   }
 }
