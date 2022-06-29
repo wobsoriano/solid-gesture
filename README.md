@@ -29,6 +29,11 @@ function PullRelease() {
     y: coords().y 
   }))
 
+  // Set the drag hook and define component movement based on gesture data
+  const bind = useDrag(({ down, movement: [mx, my] }) => {
+    setCoords({ x: down ? mx : 0, y: down ? my : 0 })
+  })
+
   // Bind it to a component
   return <animated.div {...bind()} style={styles()} />
 }
