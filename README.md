@@ -45,7 +45,18 @@ solid-gesture exports several primitives that can handle different gestures.
 | `useScroll`  | Handles scroll events                      |
 | `useWheel`   | Handles wheel events                       |
 | `usePinch`   | Handles the pinch gesture                  |
-| `useGesture` | Handles multiple gestures in one hook      |
+| `useGesture` | Handles multiple gestures in one primitive |
+
+With the exception of `useGesture` which is a special primitive, all other primitives share the same API:
+
+```jsx
+const bind = useDrag((state) => doSomethingWith(state), config)
+return <div {...bind(arg)} />
+```
+
+- `state` is an object containing all attributes of the gesture, including the original event. That state is passed to your handler every time the gesture updates. You can find all state attributes in the [Gesture state section](https://use-gesture.netlify.app/docs/state/).
+- `config` is an object containing options for the gesture. You can find all config options in the [Gesture options section](https://use-gesture.netlify.app/docs/options/).
+- `arg` is a custom argument you can pass to the bind function. See this [example](https://codesandbox.io/s/github/pmndrs/use-gesture/tree/main/demo/src/sandboxes/draggable-list) to see where it can be useful.
 
 ## License
 
