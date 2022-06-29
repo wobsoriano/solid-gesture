@@ -34,6 +34,17 @@ function PullRelease() {
 }
 ```
 
+## Primitives
+
+| Nane       | Description                                |
+|------------|--------------------------------------------|
+| useMove    | Handles mouse move events                  |
+| useHover   | Handles mouse enter and mouse leave events |
+| useScroll  | Handles scroll events                      |
+| useWheel   | Handles wheel events                       |
+| usePinch   | Handles the pinch gesture                  |
+| useGesture | Handles multiple gestures in one hook      |
+
 ## License
 
 MIT
