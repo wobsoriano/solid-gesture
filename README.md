@@ -36,7 +36,9 @@ function PullRelease() {
 
 ## Primitives
 
-| Nane       | Description                                |
+solid-gesture exports several primitives that can handle different gestures.
+
+| Primitive  | Description                                |
 |------------|--------------------------------------------|
 | useMove    | Handles mouse move events                  |
 | useHover   | Handles mouse enter and mouse leave events |
