@@ -39,6 +39,14 @@ function PullRelease() {
 }
 ```
 
+### Simple example
+
+<p align="middle">
+  <a href="https://stackblitz.com/edit/vitejs-vite-uu2vit?file=src%2FApp.tsx"><img src="https://i.imgur.com/7myz7Tt.gif" width="400"/></a>
+</p>
+
+More examples soon...
+
 ## Primitives
 
 solid-gesture exports several primitives that can handle different gestures.
