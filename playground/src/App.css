@@ -1,12 +1,16 @@
-.box {
-  background: skyblue;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  height: 100px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.drag {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: hotpink;
+  cursor: grab;
   touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 10px;
+}
+
+.drag:focus {
+  border: 2px solid red;
 }
